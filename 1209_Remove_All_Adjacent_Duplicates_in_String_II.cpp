@@ -3,6 +3,7 @@
 #include <algorithm>
 #include <stack>
 using namespace std;
+// time optimized solution implemented with vector
 string removeDuplicates(string s, int k)
 {
     vector<pair<char, int>> vectCounter;
