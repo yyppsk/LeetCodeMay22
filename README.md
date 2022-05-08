@@ -7,3 +7,4 @@
  5.  225 Implement Stack using Queues
  6. 1209 Remove All Adjacent Duplicates in String II
  7. 456 132 Pattern
+ 8. 341 Flatten Nested List Iterator
