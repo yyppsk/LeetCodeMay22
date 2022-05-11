@@ -7,4 +7,6 @@
  5.  225 Implement Stack using Queues
  6. 1209 Remove All Adjacent Duplicates in String II
  7. 456 132 Pattern
- 8. 341 Flatten Nested List Iterator
+ 8. 341 Flatten Nested List Iterato
+ 9. 17 Letter Combinations of a Phone Number
+ 10. 216 Combination Sum III
