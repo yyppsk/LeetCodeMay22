@@ -1,9 +1,9 @@
 #include<iostream>
 #include<vector>
 #include<algorithm>
-void solve(){
-
-}
+vector<vector<int>> permuteUnique(vector<int>& nums) {
+        
+    }
 using namespace std;
 int main()
 {
