@@ -35,14 +35,15 @@ int networkDelayTime(vector<vector<int>> &times, int n, int k)
     int maxTime = 0;
     for (int i = 1; i <= n; i++)
     {
-        if(signals[i]==INT_MAX)
+        if (signals[i] == INT_MAX)
             return -1;
-        maxTime = max(maxTime,signals[i]);
+        maxTime = max(maxTime, signals[i]);
     }
     return maxTime;
 }
 int main()
 {
-    
+    vector<vector<int>> T = {{2, 1, 1}, {2, 3, 1}, {3, 4, 1}};
+    cout << networkDelayTime(T, 4, 2);
     return 0;
 }
