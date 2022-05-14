@@ -15,7 +15,12 @@ int networkDelayTime(vector<vector<int>> &times, int n, int k)
     }
     queue<int> q;
     q.push(k);
-    signals[k] = 0; //first signal always takes zero to itself
+    signals[k] = 0; // first signal always takes zero to itself
+    while (!q.empty())
+    {
+        int curr = q.front();
+        q.pop();
+    }
 }
 int main()
 {
