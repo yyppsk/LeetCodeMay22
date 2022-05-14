@@ -36,7 +36,7 @@ int networkDelayTime(vector<vector<int>> &times, int n, int k)
     for (int i = 1; i <= n; i++)
     {
         if (signals[i] == INT_MAX)
-            return -1;
+            return -1; //if no max_int remains in our vector
         maxTime = max(maxTime, signals[i]);
     }
     return maxTime;
