@@ -13,6 +13,9 @@ int networkDelayTime(vector<vector<int>> &times, int n, int k)
         int j = times[i][0];
         graph[j].push_back({times[i][1], times[i][2]});
     }
+    queue<int> q;
+    q.push(k);
+    signals[k] = 0; //first signal always takes zero to itself
 }
 int main()
 {
