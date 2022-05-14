@@ -20,9 +20,29 @@ int networkDelayTime(vector<vector<int>> &times, int n, int k)
     {
         int curr = q.front();
         q.pop();
+        for (pair<int, int> p : graph[curr])
+        {
+            int next = p.first;
+            int time = p.second;
+            int arrivalTime = signals[curr] + time;
+            if (signals[next] > arrivalTime)
+            {
+                signals[next] = arrivalTime;
+                q.push(next);
+            }
+        }
     }
+    int maxTime = 0;
+    for (int i = 1; i <= n; i++)
+    {
+        if(signals[i]==INT_MAX)
+            return -1;
+        maxTime = max(maxTime,signals[i]);
+    }
+    return maxTime;
 }
 int main()
 {
+    
     return 0;
 }
