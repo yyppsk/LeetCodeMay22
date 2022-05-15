@@ -6,6 +6,7 @@ public:
         if (!root)
             return 0;
         return max(height(root->left), height(root->right)) + 1;
+        //Construct a Tree Trace diagram to Understand how for each call sum is retured
     }
     int sum = 0;
     int sum_at_k(TreeNode *root, int k)
