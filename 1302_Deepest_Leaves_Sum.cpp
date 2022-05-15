@@ -1,11 +1,9 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-void solve(){
-
-}
-using namespace std;
-int main()
-{
-    return 0;
-}
+class Solution {
+public:
+    int height (TreeNode* root)
+    {
+        if (!root)
+            return 0;
+        return max(height(root->left), height(root->right)) + 1;
+    }
+};
