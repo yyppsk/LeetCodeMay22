@@ -1,4 +1,7 @@
 #  LeetCode MAY'22
+###  All solutions in C++ <img align="right" alt="C++" width="125px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/1822px-ISO_C%2B%2B_Logo.svg.png" />
+<br>
+
 
  1. 844 Backspace String Compare
  2.  905 Sort Array By Parity
