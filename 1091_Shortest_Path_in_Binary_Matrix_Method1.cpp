@@ -14,3 +14,9 @@ int shortestPathBinaryMatrix(vector<vector<int>> &grid)
         return -1;
     }
     vector<vector<int>> dirs = {{-1, -1}, {-1, 0}, {-1, 1}, {0, -1}, {0, 1}, {1, -1}, {1, 0}, {1, 1}};
+    queue<pair<int,int>>q;
+        q.push({0,0});
+        grid[0][0]=1;
+        int ans=0;
+        int m=grid.size()-1;
+        int n=grid[0].size()-1;
