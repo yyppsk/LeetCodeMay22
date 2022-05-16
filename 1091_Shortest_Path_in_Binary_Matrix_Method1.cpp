@@ -6,9 +6,11 @@ bool isValid(int r, int c, vector<vector<int>> &grid, int m, int n)
     }
     return false;
 }
-int shortestPathBinaryMatrix(vector<vector<int>>& grid) {
-        
-        if(grid[0][0]==1)
-        {
-            return -1;
-        }
+int shortestPathBinaryMatrix(vector<vector<int>> &grid)
+{
+
+    if (grid[0][0] == 1)
+    {
+        return -1;
+    }
+    vector<vector<int>> dirs = {{-1, -1}, {-1, 0}, {-1, 1}, {0, -1}, {0, 1}, {1, -1}, {1, 0}, {1, 1}};
