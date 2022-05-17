@@ -1,11 +1,7 @@
-#include<iostream>
-#include<vector>
-#include<algorithm>
-void solve(){
-
-}
-using namespace std;
-int main()
-{
-    return 0;
-}
+class Solution {
+public:
+   
+    TreeNode* getTargetCopy(TreeNode* original, TreeNode* cloned, TreeNode* target) {
+       TreeNode*res;
+        return inorder(original,cloned,target,res);
+    }
