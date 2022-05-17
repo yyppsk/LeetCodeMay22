@@ -21,6 +21,6 @@ public:
 
             inorder(original->right, cloned->right, target, res);
         }
-        return res;
+        
     }
 };
